@@ -147,8 +147,6 @@ INHERITING FROM zdmo_cl_rap_generator_base
       IMPORTING VALUE(lo_transport) TYPE sxco_transport
       .
 
-
-
     METHODS generate_analytics_service
 *      IMPORTING io_put_operation1 TYPE REF TO if_xco_cp_gen_d_o_put
 *                io_put_operation2 TYPE REF TO if_xco_cp_gen_d_o_put
