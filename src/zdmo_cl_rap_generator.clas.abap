@@ -311,7 +311,7 @@ ENDCLASS.
 
 
 
-CLASS zdmo_cl_rap_generator IMPLEMENTATION.
+CLASS ZDMO_CL_RAP_GENERATOR IMPLEMENTATION.
 
 
   METHOD add_annotation_ui_facets.
@@ -2468,8 +2468,8 @@ CLASS zdmo_cl_rap_generator IMPLEMENTATION.
 
         lo_field = lo_view->add_field( xco_cp_ddl=>field( '_' && io_rap_bo_node->root_node->rap_node_objects-alias ) ).
         lo_field->create_association( io_rap_bo_node->parent_node->rap_node_objects-custom_entity
-         " )->set_cardinality( xco_cp_cds=>cardinality->one_to_n
-          )->set_condition( lo_condition )->set_to_parent(  ).
+          )->set_cardinality( xco_cp_cds=>cardinality->one
+          )->set_condition( lo_condition ).
 
       ENDIF.
 
