@@ -1618,15 +1618,18 @@ CLASS lhc_Node DEFINITION INHERITING FROM cl_abap_behavior_handler.
       RESULT    result.
     METHODS addChildDataSourceAbsEntity FOR MODIFY
       IMPORTING keys   FOR ACTION Node~addChildDataSourceAbsEntity
-      RESULT    result.
+*      RESULT    result
+      .
 
     METHODS addChildDataSourceCDSview FOR MODIFY
       IMPORTING keys   FOR ACTION Node~addChildDataSourceCDSview
-      RESULT    result.
+*      RESULT    result
+      .
 
     METHODS addChildDataSourceTable FOR MODIFY
       IMPORTING keys   FOR ACTION Node~addChildDataSourceTable
-      RESULT    result.
+*      RESULT    result
+      .
     METHODS SetFieldNames FOR DETERMINE ON MODIFY
       IMPORTING keys FOR Node~SetFieldNames.
     METHODS mandatory_fields_check FOR VALIDATE ON SAVE
@@ -2234,7 +2237,7 @@ CLASS lhc_Node IMPLEMENTATION.
         FROM keys_for_add_child_node
       RESULT DATA(result_add_child_node).
 
-    result = CORRESPONDING #( DEEP result_add_child_node ).
+*    result = CORRESPONDING #( DEEP result_add_child_node ).
 
   ENDMETHOD.
 
@@ -2257,7 +2260,7 @@ CLASS lhc_Node IMPLEMENTATION.
         FROM keys_for_add_child_node
       RESULT DATA(result_add_child_node).
 
-    result = CORRESPONDING #( DEEP result_add_child_node ).
+*    result = CORRESPONDING #( DEEP result_add_child_node ).
 
   ENDMETHOD.
 
@@ -2281,7 +2284,7 @@ CLASS lhc_Node IMPLEMENTATION.
         FROM keys_for_add_child_node
       RESULT DATA(result_add_child_node).
 
-    result = CORRESPONDING #( DEEP result_add_child_node ).
+*    result = CORRESPONDING #( DEEP result_add_child_node ).
 
   ENDMETHOD.
 

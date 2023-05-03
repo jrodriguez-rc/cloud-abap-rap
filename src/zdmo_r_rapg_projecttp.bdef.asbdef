@@ -233,9 +233,9 @@ authorization dependent by _Project
 
   //  static action  createRootNode parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODE result [1] $self;
   internal action addChildNode parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODE result [1] $self;
-  action ( features : instance ) addChildDataSourceTable parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODEt result [1] $self;
-  action ( features : instance ) addChildDataSourceCDSview parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODEc result [1] $self;
-  action ( features : instance ) addChildDataSourceAbsEntity parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODEa result [1] $self;
+  action ( features : instance ) addChildDataSourceTable parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODEt; // "result [1] $self;
+  action ( features : instance ) addChildDataSourceCDSview parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODEc; // result [1] $self;
+  action ( features : instance ) addChildDataSourceAbsEntity parameter ZDMO_I_RAP_GEN_PARAM_ADD_NODEa; // result [1] $self;
 
 
   determination CalculateEntityName on save { create; }

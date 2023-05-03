@@ -217,7 +217,7 @@ CLASS ZDMO_CL_RAP_GENERATOR_SETUP IMPLEMENTATION.
 
   METHOD create_service_binding.
 
-    DATA service_binding_name TYPE sxco_srvb_object_name  VALUE 'ZDMO_UI_RAPG_PROJECT_O4'.
+    DATA service_binding_name TYPE sxco_srvb_object_name  VALUE 'ZDMO_UI_RAPG_PROJECT_O2'." 'ZDMO_UI_RAPG_PROJECT_O4'.
     DATA service_definition_name TYPE  sxco_srvd_object_name  VALUE 'ZDMO_RAPG_PROJECT01'.
     DATA longtext      TYPE t_longtext.
 
@@ -273,7 +273,7 @@ CLASS ZDMO_CL_RAP_GENERATOR_SETUP IMPLEMENTATION.
 
         specification_srvb->set_short_description( |Service binding for RAP Generator| ) ##no_text.
 
-        specification_srvb->set_binding_type( xco_cp_service_binding=>binding_type->odata_v4_ui ).
+        specification_srvb->set_binding_type( xco_cp_service_binding=>binding_type->odata_v2_ui ). " odata_v4_ui ).
 
         specification_srvb->add_service( )->add_version( '0001' )->set_service_definition( service_definition_name ).
 

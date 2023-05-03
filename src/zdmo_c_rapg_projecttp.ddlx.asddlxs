@@ -146,9 +146,9 @@ annotate view ZDMO_C_RAPG_ProjectTP with
     importance: #HIGH
   } 
   ,
-    {  type: #FOR_ACTION, dataAction: 'createProjectAndRootNode', label: 'New Project'  }
+    {  type: #FOR_ACTION, dataAction: 'createProjectAndRootNode', label: 'New Project'   }
     ,
-    {  type: #FOR_ACTION, dataAction: 'copyProject', label: 'Copy Project' }
+    {  type: #FOR_ACTION, dataAction: 'copyProject', label: 'Copy Project'  }
     ,
     {  type: #FOR_ACTION, dataAction: 'deleteProject', label: 'Delete repository objects' }
   
