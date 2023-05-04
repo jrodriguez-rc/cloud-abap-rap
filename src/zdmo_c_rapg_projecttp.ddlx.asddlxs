@@ -146,9 +146,9 @@ annotate view ZDMO_C_RAPG_ProjectTP with
     importance: #HIGH
   } 
   ,
-    {  type: #FOR_ACTION, dataAction: 'createProjectAndRootNode', label: 'New Project'  }
+    {  type: #FOR_ACTION, dataAction: 'createProjectAndRootNode', label: 'New Project'   }
     ,
-    {  type: #FOR_ACTION, dataAction: 'copyProject', label: 'Copy Project' }
+    {  type: #FOR_ACTION, dataAction: 'copyProject', label: 'Copy Project'  }
     ,
     {  type: #FOR_ACTION, dataAction: 'deleteProject', label: 'Delete repository objects' }
   
@@ -217,13 +217,13 @@ annotate view ZDMO_C_RAPG_ProjectTP with
   @UI.lineItem: [ {
     position: 80 ,
     importance: #HIGH,
-    label: 'ImplementationType'
+    label: 'Implementation_Key Type'
   } ]
   //  @UI.identification: [ {
   //    position: 80 ,
   //    label: 'ImplementationType'
   //  } ]
-  @UI.fieldGroup: [{ qualifier: 'FieldGroup_1', position: 10, label: 'Implementation type' }]
+  @UI.fieldGroup: [{ qualifier: 'FieldGroup_1', position: 10, label: 'Implementation_Key Type' }]
   ImplementationType;
 
   @UI.hidden: true

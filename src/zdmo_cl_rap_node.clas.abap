@@ -2442,7 +2442,13 @@ CLASS zdmo_cl_rap_node IMPLEMENTATION.
       ENDIF.
     ENDIF.
 
+    "data source field names have be set to upper-case
+    "this is required if cds views or abstract entities
+    "are used as a data source
 
+    LOOP AT lt_fields ASSIGNING FIELD-SYMBOL(<line>).
+      <line>-name = to_upper( <line>-name ).
+    ENDLOOP.
 
     "fill lt_all_fields with the fields read from the data source.
     "add additional fields to lt_all_fields if additional fields are added
